@@ -22,10 +22,10 @@ const NavBar = () => {
           </ListItem>
         </List>
         <List display="flex" cursor="pointer">
-          <Show below="sm">
+          <Show below="md">
             <PopUpMenu toggle={toggle} onRemove={() => setToggle(!toggle)} />
           </Show>
-          <Show above="sm">
+          <Show above="md">
             <MenuBar menu={menuItem} />
           </Show>
         </List>

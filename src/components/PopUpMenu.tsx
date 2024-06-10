@@ -31,7 +31,7 @@ const PopUpMenu = ({ toggle, onRemove }: Props) => {
               p={5}
               float="right"
               src={iconClose}
-              alt="icon_menu"
+              alt="icon_close"
               boxSize="65px"
               onClick={() => onRemove(!toggle)}
             />
