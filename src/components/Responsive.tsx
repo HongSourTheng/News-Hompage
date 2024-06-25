@@ -1,4 +1,4 @@
-import { Center, HStack, ResponsiveValue } from "@chakra-ui/react";
+import { Center, HStack } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 // to define this block of code using interface below
@@ -24,14 +24,12 @@ const Responsive = ({
   children,
   mt,
   display = { base: "flex" },
-
   alignItems,
   backGround,
 }: Props) => {
   return (
     <Center>
       <HStack
-        // justifyContent="space-between"
         w={{
           base: "96%",
           sm: "80%",
@@ -40,6 +38,7 @@ const Responsive = ({
         display={display}
         alignItems={alignItems}
         backgroundColor={backGround}
+        justifyContent='space-between'
         flexWrap="wrap"
       >
         {children}
