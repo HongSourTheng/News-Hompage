@@ -1,6 +1,9 @@
 * {
   user-select: none;
 }
+body {
+  background-color: hsla(0, 29%, 97%, 0.82) !important;
+}
 @font-face {
   font-family: "inter-bold";
   src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype");

@@ -1,11 +1,12 @@
 import { Box, Image } from "@chakra-ui/react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import imgPages from "../data/img-pages";
+import Detail from "./Detail";
 
 const AdsPage = () => {
   return (
-    <Box w={{ base: "100%", md: "67.5%" }} backgroundColor="red.200">
+    <Box w={{ base: "100%", md: "67.5%" }}>
       <Box w="100%">
         <Swiper navigation={true} modules={[Navigation]}>
           {imgPages.map((page, i) => (
@@ -25,7 +26,7 @@ const AdsPage = () => {
           ))}
         </Swiper>
       </Box>
-      <Box mt={1}>Detail info</Box>
+      <Detail />
     </Box>
   );
 };

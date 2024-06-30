@@ -14,7 +14,7 @@ const HomePage = () => {
         }}
         alignItems="flex-start"
         mt={7}
-        backGround="gray"
+        backGround="red.200"
       >
         <AdsPage />
         <Box
@@ -22,6 +22,7 @@ const HomePage = () => {
           height="auto"
           backgroundColor="blue.200"
           mr={2}
+          float="left"
         >
           right-box for NewsPage
         </Box>
@@ -30,6 +31,7 @@ const HomePage = () => {
           w={{ base: "100%", md: "100%" }}
           flexShrink={0}
           backgroundColor="blue"
+          float="left"
         >
           Products
         </Box>

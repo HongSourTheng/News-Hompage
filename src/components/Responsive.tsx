@@ -32,13 +32,15 @@ const Responsive = ({
       <HStack
         w={{
           base: "96%",
-          sm: "80%",
+          sm: "95%",
+          lg: "85%",
+          xl: "80%",
         }}
         mt={mt}
         display={display}
         alignItems={alignItems}
-        backgroundColor={backGround}
-        justifyContent='space-between'
+        bg={backGround}
+        justifyContent="space-between"
         flexWrap="wrap"
       >
         {children}
