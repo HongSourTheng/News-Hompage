@@ -16,7 +16,7 @@ const MenuBar = ({ menu }: Props) => {
         key={item.id}
         _hover={{
           transition: " 0.3s ease",
-          color: "hsl(35, 77%, 62%)",
+          color: "hsl(5, 85%, 63%)",
         }}
         fontFamily="inter-regular"
         fontSize="sm"

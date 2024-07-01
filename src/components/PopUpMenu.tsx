@@ -40,7 +40,7 @@ const PopUpMenu = ({ toggle, onRemove }: Props) => {
                 <ListItem
                   _hover={{
                     transition: " 0.3s ease",
-                    color: "hsl(35, 77%, 62%)",
+                    color: "hsl(5, 85%, 63%)",
                   }}
                   fontFamily="inter-bold"
                   fontSize="md"
