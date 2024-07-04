@@ -1,15 +1,9 @@
 import { ListItem } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
-interface Items {
-  id: number;
-  name: string;
-}
+import MenuProps from "../entities/menu";
 
-interface Props {
-  menu: Items[];
-}
-
-const MenuBar = ({ menu }: Props) => {
+const MenuBar = ({ menu }: MenuProps) => {
   return menu.map((item) => {
     return (
       <ListItem
@@ -22,7 +16,9 @@ const MenuBar = ({ menu }: Props) => {
         fontSize="sm"
         p={3}
       >
-        {item.name}
+        <NavLink to={`${item.path}`} >
+          {item.name}
+        </NavLink>
       </ListItem>
     );
   });

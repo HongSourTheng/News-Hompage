@@ -1,14 +1,14 @@
 import { Box, Image, List, ListItem } from "@chakra-ui/react";
-import menuItem from "../data/menu";
 import iconClose from "../assets/images/icon-menu-close.svg";
 import iconMenu from "../assets/images/icon-menu.svg";
-
+import { NavLink } from "react-router-dom";
+import MenuProps from "../entities/menu";
 interface Props {
   toggle: boolean;
   onRemove: (toggle: boolean) => void;
 }
 
-const PopUpMenu = ({ toggle, onRemove }: Props) => {
+const PopUpMenu = ({ toggle, onRemove, menu }: Props & MenuProps) => {
   return (
     <>
       {toggle ? (
@@ -36,7 +36,7 @@ const PopUpMenu = ({ toggle, onRemove }: Props) => {
               onClick={() => onRemove(!toggle)}
             />
             <Box mt="120px" ml={2}>
-              {menuItem.map((menu) => (
+              {menu.map((item) => (
                 <ListItem
                   _hover={{
                     transition: " 0.3s ease",
@@ -45,9 +45,9 @@ const PopUpMenu = ({ toggle, onRemove }: Props) => {
                   fontFamily="inter-bold"
                   fontSize="md"
                   p={2}
-                  key={menu.id}
+                  key={item.id}
                 >
-                  {menu.name}
+                  <NavLink to={`${item.path}`}> {item.name}</NavLink>
                 </ListItem>
               ))}
             </Box>

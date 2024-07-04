@@ -26,3 +26,6 @@ body {
 .swiper-button-prev:hover {
   color: #fff !important;
 }
+.active {
+  color: hsl(5, 85%, 63%);
+}
