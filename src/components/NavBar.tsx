@@ -1,7 +1,7 @@
 import { Image, List, ListItem, Show } from "@chakra-ui/react";
 import { useState } from "react";
 import logo from "../assets/images/logo.svg";
-import menuItem from "../data/menu";
+import menuItem from "../data/menus";
 import PopUpMenu from "./PopUpMenu";
 import MenuBar from "./MenuBar";
 import Responsive from "./Responsive";

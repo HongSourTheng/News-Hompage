@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -24,10 +24,20 @@ const HomePage = () => {
           mt={1}
           w={{ base: "100%", md: "100%" }}
           flexShrink={0}
-          backgroundColor="blue"
+          backgroundColor="blue.200"
           float="left"
         >
-          Products
+          <Stack direction={["column", "row"]} spacing="20px">
+            <Box w="31.88%" h="140px" bg="yellow.200">
+              img pruducts
+            </Box>
+            <Box w="31.88%" h="140px" bg="tomato">
+              img pruducts
+            </Box>
+            <Box w="31.88%" h="140px" bg="pink.100">
+              img pruducts
+            </Box>
+          </Stack>
         </Box>
       </Responsive>
     </>
