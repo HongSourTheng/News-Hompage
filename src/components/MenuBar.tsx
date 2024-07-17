@@ -15,10 +15,9 @@ const MenuBar = ({ menu }: MenuProps) => {
         fontFamily="inter-regular"
         fontSize="sm"
         p={3}
+        id="home"
       >
-        <NavLink to={`${item.path}`} >
-          {item.name}
-        </NavLink>
+        <NavLink to={`${item.path}`}>{item.name}</NavLink>
       </ListItem>
     );
   });

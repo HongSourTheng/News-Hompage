@@ -22,19 +22,27 @@ const HomePage = () => {
         <News news={newsItem} />
         <Box
           mt={1}
-          w={{ base: "100%", md: "100%" }}
+          w="100%"
           flexShrink={0}
           backgroundColor="blue.200"
           float="left"
+          m="40px 0px"
         >
-          <Stack direction={["column", "row"]} spacing="20px">
-            <Box w="31.88%" h="140px" bg="yellow.200">
+          <Stack
+            w="100%"
+            direction={{
+              base: "column",
+              md: "row",
+            }}
+            spacing="20px"
+          >
+            <Box w={{ base: "100%", md: "31.88%" }} h="140px" bg="yellow.200">
               img pruducts
             </Box>
-            <Box w="31.88%" h="140px" bg="tomato">
+            <Box w={{ base: "100%", md: "31.88%" }} h="140px" bg="tomato">
               img pruducts
             </Box>
-            <Box w="31.88%" h="140px" bg="pink.100">
+            <Box w={{ base: "100%", md: "31.88%" }} h="140px" bg="pink.100">
               img pruducts
             </Box>
           </Stack>
