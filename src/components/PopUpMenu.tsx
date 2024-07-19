@@ -73,6 +73,7 @@ const PopUpMenu = ({ toggle, onRemove, menu }: Props & MenuProps) => {
           alt="icon_menu"
           boxSize="22px"
           onClick={() => onRemove(!toggle)}
+          mt={2}
         />
       )}
     </>
