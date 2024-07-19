@@ -1,5 +1,6 @@
 * {
   user-select: none;
+  scroll-behavior: smooth;
 }
 body {
   background-color: hsla(0, 29%, 97%, 0.82) !important;
