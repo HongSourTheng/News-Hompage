@@ -5,13 +5,16 @@ import menuItem from "../data/menus";
 import PopUpMenu from "./PopUpMenu";
 import MenuBar from "./MenuBar";
 import Responsive from "./Responsive";
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <Responsive mt={1}>
       <List>
         <ListItem>
-          <Image cursor="pointer" src={logo} alt="logo" boxSize="35px" />
+          <Link to="/">
+            <Image cursor="pointer" src={logo} alt="logo" boxSize="35px" />
+          </Link>
         </ListItem>
       </List>
       <List display="flex" cursor="pointer">
